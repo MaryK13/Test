@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}
+
+.works_size {
+    width: 100%;
+    max-width: 1170px;
+    margin: 128px auto;
+}
+
+.title_size {
+    margin: 0 0 50px 0;
+}
+
+.liner {
+    width: 50px;
+    height: 2px;
+    background: #3685EE;
+}
+
+.h1 {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 500;
+    color: #454750;
+    margin: 15px 0 0 0;
+}
+
+.h1_size {
+    font-size: 43px;
+    line-height: 51px;
+}
+
+.container {
+    position: relative;
+    font-size: 0;
+}
+
+.works-example {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 30px;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+
+.ellipse {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.img {
+    width: 100%;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.works-info:hover .img{
+    z-index: 0;
+}
+
+.works-info__text {
+    font-family: 'Gilroy-Medium';
+    color: #454750;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 2px;
+    background: #ffffff;
+    padding: 20px 30px;
+    margin: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.works-info__text_size {
+    font-size: 16px;
+    line-height: 28.5px;
+}
+
+.works-info:hover .works-info__text {
+    color: #3685EE;
+}
+
+.works-info__liner_size {
+    display: none;
+    width: 100%;
+    border-radius: 2px;
+    margin: -2px 0 0 0;
+}
+
+.works-info:hover .works-info__liner_size {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .works_size {
+        max-width: 770px;
+    }
+
+    .works-example {
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 815px) {
+    .works_size {
+        max-width: 718px;
+    }
+
+    .works-example {
+        grid-gap: 46px 27px;
+    }
+}
+
+@media (max-width: 730px) {
+    .works_size {
+        max-width: 280px;
+    }
+
+    .works-example {
+        row-gap: 24px;
+    }
+}
+
