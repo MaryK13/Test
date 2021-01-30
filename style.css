@@ -43,11 +43,6 @@ body {
     line-height: 51px;
 }
 
-.container {
-    position: relative;
-    font-size: 0;
-}
-
 .works-example {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -64,6 +59,11 @@ body {
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
+}
+
+.img-wrapper {
+	position: relative;
+	font-size: 0;
 }
 
 .img {
